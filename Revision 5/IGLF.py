@@ -19,7 +19,7 @@ def find_temperature(n,V,P,R=.082057):
         Temperature=(V*P/(n*R))
         return Temperature
     except ZeroDivisionError:
-        return "Temperature must be greater than 0."
+        return "Number of Moles must be greater than 0."
 
 def find_moles(T,V,P,R=.082057):
     try:

@@ -15,7 +15,7 @@ def input_test(the_input,correct_list):
 
 IGLF_variables=['pressure','volume','temperature','moles'] #list of variables to pull from or loop over
 #list of gas constant values as keys with units listed as values in order of: pressure, volume, temperature, moles
-IGLF_constants={'0.08205':('atmosphere','liter','kelvin','mole'),'8.314':('pascals','meters cubed','kelvin','mole'),'.08205':('atmosphere','liter','kelvin','mole')}
+IGLF_constants={'0.08205':('atmosphere','liter','kelvin','mole'),'8.314':('pascal','meters cubed','kelvin','mole'),'.08205':('atmosphere','liter','kelvin','mole')}
 #resets gas constant if run multiple times
 R=0
 print("Welcome to Ideal Gas Law App!")
@@ -49,6 +49,12 @@ while question1=='value':
                         R=float(list(IGLF_constants.keys())[list(IGLF_constants.values()).index(value_list)])
                         #dict.keys()[dict.values().index(search_age)]
                         #(list(mydict.keys())[list(mydict.values()).index(16)])
+            print(m_list)
+            if not len(m_list)==4:
+                m_list=[]
+            else:
+                break
+        
         if not len(m_list)==4:
             print('Your 4 entered units do not match a gas constant. Please try again.')
             R=0

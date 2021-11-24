@@ -1,0 +1,8 @@
+This revision is a functioning app that utilizes basic IDE to take input from user such as variable to calculate: pressure, temperature, number of moles, or volume
+
+The user must first choose if they're calculating a single value or creating a graph based on a range of values
+	-graphing functionality unavailable
+
+The app then collects input from user for the other variables in the ideal gas law to calculate the variable the user is looking for
+
+The app handles some edge cases such as dividing by zero
